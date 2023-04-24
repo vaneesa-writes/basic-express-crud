@@ -1,0 +1,59 @@
+GET http://localhost:5000/user
+
+###
+GET http://localhost:5000/user/getUsers
+
+###
+GET http://localhost:5000/user/getUser/1
+
+###
+POST http://localhost:5000/user/addUser
+Content-Type: application/json
+
+{
+"name" : "ram",
+"age" : 40,
+"id" : 4
+}
+
+###
+
+PUT http://localhost:5000/user/updateUser
+Content-Type: application/json
+
+{
+"name" : "ram",
+"age" : 35,
+"id" : 4
+}
+
+###
+GET http://localhost:5000/product
+
+###
+GET http://localhost:5000/product/getProducts
+
+###
+GET http://localhost:5000/product/getProduct/cpu
+
+###
+POST http://localhost:5000/product/addProduct
+Content-Type: application/json
+
+{
+" id" : 1,
+"name" : "cpu",
+"price" : 3000
+}
+
+
+###
+
+PUT http://localhost:5000/product/updateProduct
+Content-Type: application/json
+
+{
+"name" : "touchpad",
+" id" : 5,
+"price" : 3000
+}
